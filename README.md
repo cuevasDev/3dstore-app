@@ -1,3 +1,96 @@
+# 3dStore — Next.js Demo
+
+Ein minimalistisches Next.js (App Router) TypeScript-Projekt als Basis für einen 3D-Store / Showcase.
+
+## Inhalt
+- Kurze Projektbeschreibung
+- Tech-Stack
+- Lokale Entwicklung
+- Build & Produktion
+- Deployment (Vercel)
+- Projektstruktur
+- Contributing & Lizenz
+
+## Projektbeschreibung
+
+Dieses Repository enthält eine Next.js-Anwendung (App Router) mit TypeScript. Sie ist als Startpunkt für ein 3D-Store-Frontend gedacht — leichtgewichtig, mit klarer Struktur, damit schnell Features wie 3D-Model-Viewer, Produktseiten und Checkout ergänzt werden können.
+
+## Tech-Stack
+- Next.js (App Router)
+- TypeScript
+- PostCSS (Konfiguration liegt im Projekt)
+- Deployment: idealerweise Vercel
+
+Hinweis: Paketmanager und Versionsangaben stammen aus `package.json` — prüfe dort ggf. die exakten Skripte.
+
+## Voraussetzungen
+- Node.js (empfohlen LTS, z. B. 18+)
+- npm oder pnpm/yarn
+- Optional: Vercel CLI oder GitHub-Account für Deployment
+
+## Lokale Entwicklung
+
+1. Abhängigkeiten installieren
+
+```bash
+npm install
+# oder falls du pnpm benutzt:
+# pnpm install
+```
+
+2. Entwicklungsserver starten
+
+```bash
+npm run dev
+# Öffne http://localhost:3000
+```
+
+3. Build & Preview
+
+```bash
+npm run build
+npm run start
+# oder zum lokalen Preview (Next.js):
+# npm run start  # prüfe package.json-skripte
+```
+
+## Deployment
+
+Empfohlen: Vercel — Next.js ist dort nativ unterstützt.
+
+1. Verbinde dein GitHub-Repository mit Vercel
+2. Wähle das Projekt, Vercel erkennt automatisch Next.js-Konfiguration
+3. Setze Umgebungsvariablen (falls nötig)
+
+Alternativ kannst du auch andere Plattformen nutzen, die Node.js/Next.js unterstützen.
+
+## Projektstruktur (Auszug)
+
+```
+3dstore-app/
+  app/                # Next.js App-Router Seiten & Layout
+  public/             # Statische Assets (SVG, Bilder)
+  next.config.ts
+  package.json
+  README.md
+```
+
+## Contributing
+
+1. Forke das Projekt
+2. Erstelle einen Branch: `git checkout -b feat/awesome`
+3. Committe deine Änderungen: `git commit -m "feat: beschreibe"`
+4. Erstelle ein Pull-Request
+
+Bitte beschreibe Änderungen klar und halte Commits klein und thematisch.
+
+## Lizenz
+
+Dieses Repository hat derzeit keine Lizenzdatei. Wenn du eine Lizenz möchtest, füge z. B. eine `LICENSE` mit MIT oder einer anderen passenden Lizenz hinzu.
+
+---
+
+Wenn du möchtest, kann ich jetzt das lokale Git-Repository initialisieren, alle Dateien committen und (falls du mir erlaubst) ein GitHub-Repository anlegen und die Dateien dorthin pushen. Soll ich fortfahren und ein GitHub-Repo automatisch erstellen (benötigt `gh` CLI und Auth), oder soll ich dir stattdessen die genauen Befehle geben, die du lokal ausführen kannst?
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
